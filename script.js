@@ -1,30 +1,31 @@
 const gameBoard = {
-  gameBoard: [
-    [],
-    [],
-    [],
-  ],
+  gameBoard: [[], [], []],
 };
-
 
 const player = {
-  createPlayer: (name) => {
-    if (!this.player1) {
-      this.player1 = name;
-      console.log(this.player1);
+  player1: {
+    name: "",
+    Symbol: "X",
+  },
+  player2: {
+    name: "",
+    Symbol: "O",
+  },
+  setupPlayerName: (name) => {
+    if (player.player1.name == "") {
+      player.player1.name = name;
     } else {
-      this.player2 = name;
-      console.log(this.player2);
+      player.player2.name = name;
     }
-    
   },
 };
-
 
 const game = {
-  play: (playerName, position) => {
-    player.createPlayer(playerName)
-    gameBoard.gameBoard[1].push(position)
-    console.log(gameBoard.gameBoard[1])
+  play: (player, position) => {
+    gameBoard.gameBoard[position.x][position.y] = player.Symbol;
+    console.log(gameBoard.gameBoard[position.x][position.y]);
   },
 };
+
+
+// position = {x:0, y:1}
