@@ -1,14 +1,25 @@
+/* 
+    yellow:  rgb(104, 98, 36);   
+    pink:  rgb(93, 32, 51);   
+*/
+
 body{
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: rgb(38, 26, 67);
+    background-color: rgb(26, 50, 67);
+    font-family: sans-serif;
 }
 .mainContainer{
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: rgb(80, 105, 134);
+}
+.mainContainer h3{
+    font-size: x-large;
 }
 .board{
     display: grid;
@@ -19,8 +30,8 @@ body{
 .cell{
     height: 120px;
     width: 120px;
-    background-color: rgb(49, 37, 77);
+    background-color: rgb(32, 55, 72);
     
     border-radius: 9px;
-    border: 1px solid rgb(70, 53, 111);;
+    border: 1px solid rgb(48, 75, 103);;
 }
