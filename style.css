@@ -33,5 +33,9 @@ body{
     background-color: rgb(32, 55, 72);
     
     border-radius: 9px;
-    border: 1px solid rgb(48, 75, 103);;
+    border: 1px solid rgb(48, 75, 103);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
 }
